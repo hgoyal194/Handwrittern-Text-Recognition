@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Handwriting Text Recognition</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+
+<div class="jumbotron">
+    <div class="container text-center">
+        <h1>Handwriting Text Recognition</h1>
+        <p>Upload a text contain image and get generated text.</p>
+    </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+        </div>
+    </div>
+</nav>
+
+<div class="container text-center">
+    <div class="col-sm-12">
+        <div class="form">
+            <h1>Upload a photo!</h1>
+            <!-- IMAGE UPLOAD FORM -->
+            <form id="formId">
+                <div class="section">Note: Only image files are allowed.</div>
+                <div class="inner-wrap">
+                    <label>
+                        <input type="file" id="photo" name="photo" required>
+                    </label>
+                    <div class="button-section">
+                        <input type="submit" name="Upload" value="Upload Photo">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="dynamicContent">
+    <img src="" alt="image">
+    <div>
+        <p></p>
+        <button id="resetContent">Reset</button>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+<script src="/js/index.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
