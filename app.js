@@ -24,6 +24,9 @@ const upload = multer({
             cb(null, file.originalname);
         }
     }),
+    limits: {
+        fieldArrayIndexLimit: 0
+    },
     fileFilter: (req, file, cb) => {
         if (file.mimetype.startsWith('image')) {
             console.log("photo uploaded");
